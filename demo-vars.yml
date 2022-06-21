@@ -1,0 +1,8 @@
+# demo-vars
+# Just debugs an `app_version` variable.
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Show version
+    debug:
+      msg: "App version {{ app_version }} wil be deployed"
